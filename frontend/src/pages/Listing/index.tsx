@@ -1,11 +1,18 @@
+import axios from "axios";
 import MovieCard from "components/MovieCard";
 import MovieScore from "components/MovieScore";
 import Pagination from "components/Pagination";
 
 function Listing() {
+
+    // TESTE
+    axios.get('http://localhost:8080/movies?size=12&page=0')
+        .then(response => {
+            console.log(response.data);
+        })
+
     return (
         <>
-
             <Pagination />
 
             <div className="container">
