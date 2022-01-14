@@ -3,7 +3,6 @@ package com.devsuperior.dsmovie.dto;
 import com.devsuperior.dsmovie.entities.Movie;
 import org.springframework.stereotype.Service;
 
-@Service
 public class MovieDTO {
 
     private Long id;
